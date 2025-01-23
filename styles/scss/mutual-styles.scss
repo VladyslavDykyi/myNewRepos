@@ -1,0 +1,111 @@
+@use "./global.scss" as *;
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.text {
+  line-height: 144%;
+}
+
+a,
+img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+
+  @include button-hover();
+}
+
+.global-inline-pad {
+  padding-inline: 50px;
+
+  @media screen and (max-width: 1024px) {
+    padding-inline: 25px;
+  }
+
+  @media screen and (max-width: 769px) {
+    padding-inline: 20px;
+  }
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.mobile-menu-is-opened {
+  height: 100%;
+  overflow: hidden;
+
+  @media screen and (min-width: 769px) {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container,
+.hero-container,
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-title {
+  font-family: "Russo", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: $accent;
+
+  &.white {
+    color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.global-btn {
+  background-color: $accentLight;
+  border-radius: 8px;
+  padding: 18px 32px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  height: fit-content;
+}
+
+.hidden-titles {
+  display: none;
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_24pt-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Russo";
+  font-display: swap;
+  src: url("../../assets/fonts/RussoOne-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}/*# sourceMappingURL=global.css.map */

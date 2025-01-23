@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_24pt-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Russo";
+  font-display: swap;
+  src: url("../../assets/fonts/RussoOne-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+.hero-bg {
+  background-image: url("../../assets/images/backgrounds/hero-bg.jpg");
+  padding-top: 84px;
+  padding-bottom: 28px;
+}
+@media screen and (max-width: 400px) {
+  .hero-bg {
+    padding-top: 60px;
+  }
+}
+
+.logo-title {
+  margin-bottom: 94px;
+}
+@media screen and (max-width: 600px) {
+  .logo-title {
+    width: 400px;
+  }
+}
+
+.text-block {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.hero-flex-wrapper {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 1024px) {
+  .hero-flex-wrapper {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .hero-flex-wrapper {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-flex-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.registration-btn {
+  display: flex;
+  gap: 40px;
+  align-self: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .registration-btn {
+    align-self: flex-start;
+  }
+}
+
+.mouse-block {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 769px) {
+  .mouse-block {
+    display: none;
+  }
+}
+
+.partner__logos {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 130px);
+  row-gap: 32px;
+  -moz-column-gap: 52px;
+       column-gap: 52px;
+  justify-content: center;
+  padding-block: 54px;
+}
+@media screen and (max-width: 1024px) {
+  .partner__logos {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6, 80px);
+    row-gap: 24px;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+    padding-block: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partner__logos {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(6, 60px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .partner__logos {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner-logo-img,
+  .partner-logo-link {
+    width: 100px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partner-logo-img,
+  .partner-logo-link {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.partnership {
+  background-image: url("../../assets/images/backgrounds/main-pt2-bg.jpg");
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 890px) {
+  .partnership {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .partnership {
+    padding-block: 50px;
+  }
+}
+.partnership-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.partnership-block__text {
+  line-height: 144%;
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 550px;
+}
+@media screen and (max-width: 600px) {
+  .partnership-block__text {
+    font-size: 16px;
+  }
+}
+.partnership-btn {
+  display: flex;
+  gap: 32px;
+}/*# sourceMappingURL=landing-page.css.map */

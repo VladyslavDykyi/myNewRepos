@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Play";
+  font-display: swap;
+  src: url("../../assets/fonts/Play-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_28pt-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../../assets/fonts/Inter_24pt-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Russo";
+  font-display: swap;
+  src: url("../../assets/fonts/RussoOne-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.text {
+  line-height: 144%;
+}
+
+a,
+img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.3s;
+  background-color: #0a8aaa;
+  color: #eeecec;
+}
+
+.global-inline-pad {
+  padding-inline: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .global-inline-pad {
+    padding-inline: 25px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .global-inline-pad {
+    padding-inline: 20px;
+  }
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.mobile-menu-is-opened {
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  .mobile-menu-is-opened {
+    height: auto;
+    overflow: auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container,
+.hero-container,
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-title {
+  font-family: "Russo", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #283761;
+}
+.sub-title.white {
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .sub-title {
+    font-size: 24px;
+  }
+}
+
+.global-btn {
+  background-color: #01a0c6;
+  border-radius: 8px;
+  padding: 18px 32px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hidden-titles {
+  display: none;
+}/*# sourceMappingURL=mutual-styles.css.map */

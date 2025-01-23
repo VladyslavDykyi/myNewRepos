@@ -1,0 +1,1 @@
+const hamburger=document.querySelector(".hamburger");hamburger.addEventListener("click",(()=>{const e=document.querySelector("#overlay"),t=document.querySelector("#mobile-nav");document.querySelector("body").classList.toggle("mobile-menu-is-opened"),e.classList.toggle("overlay-active"),t.classList.toggle("mobile-nav-active"),hamburger.classList.toggle("close-button")}));

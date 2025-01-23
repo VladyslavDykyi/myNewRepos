@@ -1,0 +1,23 @@
+@mixin link-hover-active {
+  border-bottom: transparent solid 2px;
+  padding-bottom: 4px;
+
+  &:hover {
+    border-bottom-color: white;
+    transition: 0.6s;
+  }
+
+  &:active {
+    color: #be2633;
+    border-color: #be2633;
+    transition: none;
+  }
+}
+
+@mixin button-hover {
+  &:hover {
+    transition: 0.3s;
+    background-color: #0a8aaa;
+    color: #eeecec;
+  }
+}

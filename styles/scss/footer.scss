@@ -1,0 +1,197 @@
+@use "./global.scss" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &-bg {
+    background-color: black;
+  }
+
+  &-container {
+    padding-top: 48px;
+    padding-bottom: 32px;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 12px;
+    }
+
+    @media screen and (max-width: 890px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    gap: 64px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 769px) {
+      justify-content: center;
+      gap: 36px;
+    }
+
+    @media screen and (max-width: 769px) {
+      justify-content: space-between;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media screen and (max-width: 890px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__item a {
+      @include link-hover-active();
+
+      font-size: 14px;
+    }
+  }
+
+  &-main-logo {
+    align-self: flex-start;
+    display: flex;
+
+    @media screen and (max-width: 890px) {
+      order: 1;
+      align-self: center;
+    }
+  }
+
+  &-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 260px;
+    width: 100%;
+    font-size: 18px;
+
+    @media screen and (max-width: 890px) {
+      justify-content: space-between;
+      flex-direction: row;
+      max-width: none;
+      font-size: 12px;
+      gap: 8px;
+    }
+
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+      flex-direction: column;
+      max-width: 240px;
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 400px) {
+      max-width: none;
+    }
+  }
+
+  &-flex-wrap {
+    display: flex;
+    justify-content: end;
+
+    @media screen and (max-width: 890px) {
+      gap: 8px;
+    }
+
+    @media screen and (max-width: 769px) {
+      gap: 0px;
+    }
+  }
+
+  &-contact-icon {
+    margin-left: 12px;
+    align-self: center;
+
+    &:hover path {
+      transition: 0.4s;
+      fill: white;
+    }
+
+    @media screen and (max-width: 890px) {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 769px) {
+      margin-left: 12px;
+    }
+  }
+
+  &-phone {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      transition: 0.4s;
+      border-bottom-color: white;
+    }
+  }
+
+  &-workers-name {
+    margin-right: auto;
+  }
+
+  &-social-logos-wrap {
+    display: flex;
+    gap: 16px;
+  }
+
+  &-social-logo {
+    &:hover path {
+      transition: 0.4s;
+      fill: rgb(1, 160, 198);
+    }
+  }
+
+  &-geolocation {
+    margin-top: 12px;
+
+    @media screen and (max-width: 890px) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 769px) {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+  }
+}
+
+.work-time {
+  font-size: 14px;
+
+  @media screen and (max-width: 890px) {
+    font-size: 12px;
+  }
+}

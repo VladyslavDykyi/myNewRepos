@@ -1,0 +1,159 @@
+@use "./global.scss" as *;
+
+.form-container {
+  padding-block: 100px;
+  color: $primaryDark;
+
+  @media screen and (max-width: 1024px) {
+    padding-block: 80px;
+  }
+
+  @media screen and (max-width: 769px) {
+    padding-block: 40px;
+  }
+}
+
+.question-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 890px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 769px) {
+    font-size: 16px;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 38px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid $accent;
+  border-radius: 2px;
+  margin-bottom: 20px;
+
+  input {
+    font-family: "Play", sans-serif;
+    padding: 12px 20px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgb(72, 68, 68);
+    }
+
+    label {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    flex-direction: column;
+  }
+
+  &-title {
+    color: $accent;
+
+    @media screen and (max-width: 769px) {
+      font-size: 24px;
+    }
+  }
+
+  &-flex-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 890px) {
+      gap: 16px;
+    }
+
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+    }
+
+    .text {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    button.global-btn {
+      align-self: center;
+
+      @media screen and (max-width: 769px) {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  &-confirmation-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: 33%;
+
+  span {
+    color: $dangerColor;
+  }
+}
+
+.custom-checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  opacity: 0;
+  margin: 0;
+  bottom: 0px;
+
+  &:checked + .custom-checkbox-label::after {
+    display: block;
+  }
+}
+
+.custom-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: fit-content;
+  user-select: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid $primaryDark;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    display: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $accentLight;
+    border-radius: 50%;
+    background-color: $accentLight;
+
+    @media screen and (max-width: 769px) {
+      bottom: 78px;
+    }
+  }
+}
